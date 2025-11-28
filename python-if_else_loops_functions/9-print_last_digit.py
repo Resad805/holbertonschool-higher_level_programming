@@ -6,5 +6,6 @@ def print_last_digit(number):
         lastdigit = (number * -1) %10
     elif number == 0:
         lastdigit = 0
-    print(last_digit, end="")
-    return last_digit
+
+    print(lastdigit, end="")
+    return lastdigit
