@@ -13,6 +13,6 @@ if __name__ == "__main__":
         print(f'1: {sys.argv[1]}')
 
     elif args > 1:
-        print(f'{sys.argv[args]} argument:')
+        print(f'{args} argument:')
         for i in range(0, args +1):
             print(f'{i}: {sys.argv[i]}')
