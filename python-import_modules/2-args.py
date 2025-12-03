@@ -9,7 +9,7 @@ if __name__ == "__main__":
         print('0 arguments')
     
     elif args == 1:
-        print('1 arguments')
+        print('1 argument:')
         print(f'1: {sys.argv[1]}')
 
     elif args > 1:
