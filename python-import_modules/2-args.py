@@ -6,13 +6,13 @@ if __name__ == "__main__":
     args = (len(sys.argv)) - 1
 
     if args == 0:
-        print('0 arguments')
+        print('0 argument:')
     
     elif args == 1:
         print('1 argument:')
         print(f'1: {sys.argv[1]}')
 
     elif args > 1:
-        print(f'{sys.argv[argv]} arguments')
+        print(f'{sys.argv[argv]} argument:')
         for i in range(0, args):
             print(f'{i}: {sys.argv[i]}')
