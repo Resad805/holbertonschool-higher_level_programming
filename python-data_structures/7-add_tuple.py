@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def add_tuple(tuple_a=(), tuple_b=()):
+def add_tuple(tuple_x=(), tuple_y=()):
     x = tuple_x[0] if len(tuple_x) > 0 else 0
     y = tuple_y[0] if len(tuple_y) > 0 else 0
 
