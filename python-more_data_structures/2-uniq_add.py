@@ -8,4 +8,4 @@ def uniq_add(my_list=[]):
     for i in my_list:
         if i not in my_list:
             result += i
-    return print(f'Result: {result}')
+    return print("Result: {:d}".format(result))
