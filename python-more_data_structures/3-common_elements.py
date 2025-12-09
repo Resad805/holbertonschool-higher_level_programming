@@ -7,7 +7,7 @@ set_2 = { "Bash", "C", "Ruby", "Perl" }
 def common_elements(set_1, set_2):
     z = set_1.copy()
     new = {}
-    for i in z:
+    for i in set_1:
         if i not in set_2:
             z.pop(i)
     return print(list(z))
