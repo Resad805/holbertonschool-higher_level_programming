@@ -9,7 +9,6 @@ def square_matrix_simple(matrix=[]):
     nrow = []
     for i in matrix:
         for j in i:
-            squared_num = i*i
-            nrow.append(squared_num)
+            nrow.append(j*j)
         nmatrix.append(nrow)
     return nmatrix
