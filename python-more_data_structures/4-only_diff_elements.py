@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+set_1 = { "Python", "C", "Javascript" }
+set_2 = { "Bash", "C", "Ruby", "Perl" }
 def only_diff_elements(set_1, set_2):
     final = []
     for i in set_1:
