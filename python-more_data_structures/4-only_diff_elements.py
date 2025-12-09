@@ -2,11 +2,12 @@
 
 
 def only_diff_elements(set_1, set_2):
-    od_set = set_1.copy()
-    new = []
-    for i in od_set:
-        if i in set_2:
-            new.append(i)
-    for i in new:
-        od_set.remove(i)
-    return print(sorted(list(od_set)))
+    final = []
+    for i in set_1:
+        if i not in set_1:
+            final.append(i)
+    for i in set2:
+        if i not in set_2:
+            final.append(i)
+
+    return print(sorted(list(final)))
