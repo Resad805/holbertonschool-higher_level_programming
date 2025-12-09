@@ -6,8 +6,8 @@ matrix = [
     
 def square_matrix_simple(matrix=[]):
     nmatrix = []
-    nrow = []
     for i in matrix:
+        nrow = []
         for j in i:
             z = j*j
             nrow.append(z)
