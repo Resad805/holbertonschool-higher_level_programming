@@ -9,4 +9,4 @@ def common_elements(set_1, set_2):
             new.append(i)
     for i in new:
         z.remove(i)
-    return print(list(z))
+    return print(sorted(list(z)))
