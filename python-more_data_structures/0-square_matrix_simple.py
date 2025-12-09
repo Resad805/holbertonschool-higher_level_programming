@@ -4,7 +4,9 @@ matrix = [
     [4, 5, 6],
     [7, 8, 9]]
 
-def square_matrix_simple(matrix=[] ):
+
+def square_matrix_simple(matrix=[]):
+
     nmatrix = []
     for i in matrix:
         nrow = []
