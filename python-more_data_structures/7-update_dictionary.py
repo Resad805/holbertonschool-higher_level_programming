@@ -7,4 +7,4 @@ def update_dictionary(a_dictionary, key:str, value):
             a_dictionary.update({i:value})
         else:
             a_dictionary[key] = value
-        print(f"{keys}: {value}")
+        print(f"{key}: {value}")
