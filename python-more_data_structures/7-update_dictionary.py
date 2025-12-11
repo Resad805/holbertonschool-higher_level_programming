@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def update_dictionary(a_dictionary, key:str, value):
-    sorted_keys = sorted(a_dictionary.keys())
+    sorted_keys = sorted(a_dictionary.key())
     sorted_dict = sorted(a_dictionary)
     for i in sorted_dict:
         if sorted_keys == key:
