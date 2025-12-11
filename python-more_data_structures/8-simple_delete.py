@@ -4,6 +4,4 @@ def simple_delete(a_dictionary, key=""):
     for i in new_dict:
         if key == i:
             a_dictionary.pop(key)
-        else:
-            break
     return a_dictionary
