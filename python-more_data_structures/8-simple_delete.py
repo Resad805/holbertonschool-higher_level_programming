@@ -2,6 +2,7 @@
 def simple_delete(a_dictionary, key=""):
     for i in a_dictionary:
         if key == i:
-            continue
-    a_dictionary.pop(key)
+            a_dictionary.pop(key)
+        else:
+            break
     return a_dictionary
