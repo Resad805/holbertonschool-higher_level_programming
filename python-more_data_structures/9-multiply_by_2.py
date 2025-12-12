@@ -2,7 +2,7 @@
 def multiply_by_2(a_dictionary):
     new_dict = a_dictionary.copy()
     key = a_dictionary.keys()
-    values = a_dictionary.values()
+    values = int(a_dictionary.values())
     for j in key:
         for i in values:
             if i > 0:
