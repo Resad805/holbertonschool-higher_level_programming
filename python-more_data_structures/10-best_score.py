@@ -3,7 +3,8 @@
 def best_score(a_dictionary):
     ndict = a_dictionary.copy()
     for key, value in a_dictionary.items():
-        value > a_dictionary[value + 1]
-        ndict.pop(a_dictionary[value + 1])
+        for x in a_dictionary.value():
+            if value > x:
+                ndict.pop(x)
 
     return ndict
