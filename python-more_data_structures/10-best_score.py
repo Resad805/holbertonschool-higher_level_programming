@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-
-def best_score(a_dictionary):
-    ndict = a_dictionary.copy()
+def best_score_expanded(a_dictionary):
+    if not a_dictionary:
+        return None
+    current_best_key = None
+    current_best_score = -1 
     for key, value in a_dictionary.items():
-        for x in a_dictionary.value():
-            if value > x:
-                ndict.pop(x)
-
-    return ndict
+        if value > current_best_score:
+            current_best_score = value
+            current_best_key = key
+    return current_best_key
