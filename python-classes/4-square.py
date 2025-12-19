@@ -13,7 +13,6 @@ class Square:
     
     @size.setter
     def size(self, value):
-            """Setter: sets the private __size with validation"""
             if not isinstance(value, int):
                 raise TypeError('size must be an integer')
             if value < 0:
