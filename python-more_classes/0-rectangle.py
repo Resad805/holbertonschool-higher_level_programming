@@ -2,4 +2,5 @@
 '''s'''
 
 class Rectangle:
+    """s"""
     pass
