@@ -4,6 +4,9 @@
 
 class BaseGeometry:
     """s"""
+    def __init__(self, width, height):
+        self.__width = width
+        self.__height = height
 
     def area(self):
         raise Exception("area() is not implemented")
@@ -17,6 +20,4 @@ class BaseGeometry:
 
 class Rectangle(BaseGeometry):
     """s"""
-    def __init__(self, width, height):
-        self.__width = width
-        self.__height = height
+    pass
