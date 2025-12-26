@@ -2,12 +2,8 @@
 """inheritance"""
 
 
-class BaseGeometry():
+class BaseGeometry:
     """s"""
-
-    def __init__(self, width, height):
-        self.__width = width
-        self.__height = height
 
     def area(self):
         raise Exception("area() is not implemented")
@@ -18,3 +14,9 @@ class BaseGeometry():
 
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
+
+class Rectangle(BaseGeometry):
+    """s"""
+    def __init__(self, width, height):
+        self.__width = width
+        self.__height = height
