@@ -1,6 +1,6 @@
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
->>> if len(my_list) == 0:
+>>> if len(my_list) != 0:
 ...     pass
 ... else:
 ...     my_list.append(1)
