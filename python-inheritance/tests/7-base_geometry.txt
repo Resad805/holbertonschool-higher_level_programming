@@ -1,15 +1,18 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
 
+1. Sahə metodunun xəta mesajını yoxlayırıq:
 >>> try:
 ...     bg.area()
 ... except Exception as e:
 ...     print(e)
 area() is not implemented
 
+2. Düzgün daxil edilmiş dəyərlər (heç bir çıxış olmamalıdır):
 >>> bg.integer_validator("my_int", 10)
 >>> bg.integer_validator("width", 89)
 
+3. Tip xətalarını (TypeError) yoxlayırıq:
 >>> try:
 ...     bg.integer_validator("height", "20")
 ... except TypeError as e:
@@ -22,6 +25,13 @@ height must be an integer
 ...     print(e)
 age must be an integer
 
+>>> try:
+...     bg.integer_validator("is_active", True)
+... except TypeError as e:
+...     print(e)
+is_active must be an integer
+
+4. Dəyər xətalarını (ValueError) yoxlayırıq:
 >>> try:
 ...     bg.integer_validator("distance", 0)
 ... except ValueError as e:
