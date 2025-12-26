@@ -1,8 +1,8 @@
 >>> MyList = __import__('1-my_list').MyList
 >>> my_list = MyList()
->>> if len(my_list) == 0:
-...     break
->>> else:
+>>> if len(my_list) != 0:
+...     pass
+... else:
 ...     my_list.append(1)
 ...     my_list.append(4)
 ...     my_list.append(2)
