@@ -2,4 +2,5 @@
 """inheritance"""
 
 class BaseGeometry:
+    """s"""
     pass
