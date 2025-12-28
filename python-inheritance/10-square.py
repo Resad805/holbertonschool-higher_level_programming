@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+"""inheritance"""
+
+
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+class Square(Rectangle):
+    """s"""
+
+    def __init__(self, size):
+        self.integer_validator("size")
+        self.__size = size
+    def area(self):
+        return self__size**2
+    def __str__(self):
+        return "[Square] {}/{}".format(self__size)
