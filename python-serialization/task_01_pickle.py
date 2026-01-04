@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""sa"""
+"""
+Pickling custom classes.
+Provides a CustomObject class that can be serialized and deserialized
+using the pickle module.
+"""
 
 import pickle
 
@@ -28,7 +32,7 @@ class CustomObject:
         try:
             with open(filename, 'wb') as file:
                 pickle.dump(self, file)
-        except (FileNotFoundError, pickle.PickleError, OSError):
+        except (FileNotFoundError, pickle.PickleError, EOFError, OSError):
             return None
 
     @classmethod
@@ -44,6 +48,6 @@ class CustomObject:
                 obj = pickle.load(file)
                 if isinstance(obj, cls):
                     return obj
-        except (FileNotFoundError, pickle.PickleError, OSError):
+        except (FileNotFoundError, pickle.PickleError, EOFError, OSError):
             return None
         return None
