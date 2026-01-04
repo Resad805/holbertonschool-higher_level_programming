@@ -2,18 +2,15 @@
 """sa"""
 
 
-class Student:
-    """Defines a student."""
-    def __init__(self, first_name, last_name, age):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.age = age
-
-    def to_json(self, attrs=None):
-        if attrs is None:
-            return self.__dict__
-        return {k: v for k, v in self.__dict__.items() if k in attrs}
-
-    def reload_from_json(self, json):
-        for key, value in json.items():
-            setattr(self, key, value)
+def pascal_triangle(n):
+    """Return a list of lists representing the Pascal's triangle of n."""
+    if n <= 0:
+        return []
+    triangle = [[1]]
+    for i in range(1, n):
+        row = [1]
+        for j in range(1, i):
+            row.append(triangle[i-1][j-1] + triangle[i-1][j])
+        row.append(1)
+        triangle.append(row)
+    return triangle
